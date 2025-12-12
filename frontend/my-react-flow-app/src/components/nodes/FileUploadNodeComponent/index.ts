@@ -1,0 +1,2 @@
+export { FileUploadNodeComponent } from './FileUploadNodeComponent';
+

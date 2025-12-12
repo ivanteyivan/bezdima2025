@@ -1,0 +1,130 @@
+.optimizationNode {
+  padding: 15px;
+  background-color: #e8f5e9;
+  border: 2px solid #4caf50;
+  border-radius: 8px;
+  min-width: 180px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease;
+  cursor: pointer;
+  position: relative;
+
+  &.selected {
+    border: 3px solid #4caf50;
+    box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.3);
+  }
+}
+
+.handle {
+  background: #555;
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.handleLeft {
+  left: -4px;
+}
+
+.handleRight {
+  right: -4px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #4caf50;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.title {
+  font-weight: bold;
+  color: #2e7d32;
+  font-size: 14px;
+}
+
+.content {
+  font-size: 12px;
+  color: #333;
+  word-break: break-word;
+  padding: 8px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 4px;
+  line-height: 1.5;
+}
+
+.previewText {
+  color: #1b5e20;
+  font-weight: 500;
+  font-size: 12px;
+  max-height: 3.6em;
+  overflow: hidden;
+}
+
+.smallDescription {
+  color: #2e7d32;
+  font-size: 12px;
+  opacity: 0.9;
+}
+
+.generatedBadge {
+  margin-top: 8px;
+  background-color: #4caf50;
+  color: white;
+  padding: 4px 6px;
+  border-radius: 4px;
+  font-size: 10px;
+  display: inline-block;
+}
+
+.improvementsList {
+  margin-top: 6px;
+}
+
+.improvementItem {
+  color: #2e7d32;
+  font-size: 11px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.moreImprovements {
+  color: #1b5e20;
+  font-size: 11px;
+  opacity: 0.8;
+}
+
+.idLabel {
+  font-size: 10px;
+  color: #4caf50;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.resultsBadge {
+  margin-left: 8px;
+  background-color: #ff9800;
+  color: white;
+  padding: 2px 6px;
+  border-radius: 10px;
+  font-size: 10px;
+  display: inline-block;
+}

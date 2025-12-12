@@ -1,0 +1,418 @@
+// Добавьте эти стили в существующий файл
+
+.statisticsContainer {
+  padding: 20px;
+}
+
+.tabs {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 24px;
+  border-bottom: 1px solid #e5e7eb;
+  padding-bottom: 8px;
+  
+  .tab {
+    padding: 10px 20px;
+    background: white;
+    border: 1px solid #d1d5db;
+    border-radius: 8px 8px 0 0;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.3s;
+    
+    &:hover {
+      background: #f3f4f6;
+    }
+    
+    &.active {
+      background: #3b82f6;
+      color: white;
+      border-color: #3b82f6;
+    }
+  }
+}
+
+.kpiSection {
+  margin-bottom: 24px;
+  
+  .kpiGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+    
+    .kpiCard {
+      padding: 20px;
+      border-radius: 12px;
+      background: white;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      
+      &.total {
+        border-left: 4px solid #3b82f6;
+      }
+      
+      &.critical {
+        border-left: 4px solid #ef4444;
+      }
+      
+      &.linked {
+        border-left: 4px solid #10b981;
+      }
+      
+      &.features {
+        border-left: 4px solid #8b5cf6;
+      }
+      
+      .kpiValue {
+        font-size: 32px;
+        font-weight: bold;
+        margin-bottom: 4px;
+      }
+      
+      .kpiLabel {
+        font-size: 14px;
+        color: #6b7280;
+        margin-bottom: 2px;
+      }
+      
+      .kpiSubLabel {
+        font-size: 12px;
+        color: #9ca3af;
+      }
+      
+      .kpiPercentage {
+        font-size: 20px;
+        font-weight: bold;
+        color: inherit;
+      }
+    }
+  }
+}
+
+.chartsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 24px;
+  margin-bottom: 24px;
+  
+  .chartContainer {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    
+    .chartTitle {
+      margin: 0 0 16px 0;
+      font-size: 18px;
+      color: #374151;
+    }
+    
+    .chartWrapper {
+      height: 250px;
+    }
+  }
+}
+
+.quickStats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  
+  .statItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+    border-bottom: 1px solid #f3f4f6;
+    
+    &:last-child {
+      border-bottom: none;
+    }
+    
+    .statLabel {
+      color: #6b7280;
+    }
+    
+    .statValue {
+      font-weight: bold;
+      color: #374151;
+    }
+  }
+}
+
+// Priorities tab styles
+.prioritiesSection {
+  .priorityFilter {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 24px;
+    
+    .filterBtn {
+      padding: 8px 16px;
+      border: 1px solid #d1d5db;
+      border-radius: 6px;
+      background: white;
+      cursor: pointer;
+      
+      &:hover {
+        background: #f3f4f6;
+      }
+      
+      &.active {
+        background: #3b82f6;
+        color: white;
+        border-color: #3b82f6;
+      }
+    }
+  }
+  
+  .priorityChart {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .priorityStats {
+    .statCard {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      
+      .statGrid {
+        .statRow {
+          display: flex;
+          justify-content: space-between;
+          padding: 8px 0;
+          border-bottom: 1px solid #f3f4f6;
+          
+          &:last-child {
+            border-bottom: none;
+          }
+          
+          .highPriority {
+            color: #ef4444;
+            font-weight: bold;
+          }
+          
+          .mediumPriority {
+            color: #f59e0b;
+            font-weight: bold;
+          }
+          
+          .lowPriority {
+            color: #10b981;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Tags tab styles
+.tagsSection {
+  .tagsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 16px;
+    
+    .tagCard {
+      background: white;
+      padding: 16px;
+      border-radius: 8px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+      
+      .tagHeader {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 12px;
+        
+        .tagName {
+          font-weight: 600;
+          color: #374151;
+        }
+        
+        .tagCount {
+          background: #3b82f6;
+          color: white;
+          padding: 4px 8px;
+          border-radius: 12px;
+          font-size: 12px;
+        }
+      }
+      
+      .tagProgress {
+        height: 6px;
+        background: #f3f4f6;
+        border-radius: 3px;
+        overflow: hidden;
+        margin-bottom: 8px;
+        
+        .progressBar {
+          height: 100%;
+          transition: width 0.3s;
+        }
+      }
+      
+      .tagPercentage {
+        font-size: 12px;
+        color: #6b7280;
+        text-align: right;
+      }
+    }
+  }
+}
+
+// Features tab styles
+.featuresSection {
+  .featuresChart {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+}
+
+// Test Cases tab styles
+.testCasesSection {
+  .testCasesHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    
+    .testCasesStats {
+      display: flex;
+      gap: 16px;
+      
+      .stat {
+        background: #f3f4f6;
+        padding: 8px 16px;
+        border-radius: 6px;
+        font-size: 14px;
+      }
+    }
+  }
+  
+  .testCasesList {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    
+    .testCasesTable {
+      width: 100%;
+      border-collapse: collapse;
+      
+      thead {
+        background: #f9fafb;
+        
+        th {
+          padding: 16px;
+          text-align: left;
+          font-weight: 600;
+          color: #374151;
+          border-bottom: 2px solid #e5e7eb;
+        }
+      }
+      
+      tbody {
+        tr {
+          border-bottom: 1px solid #f3f4f6;
+          
+          &:hover {
+            background: #f9fafb;
+          }
+          
+          td {
+            padding: 16px;
+            vertical-align: top;
+            
+            .testName {
+              font-weight: 500;
+              color: #374151;
+            }
+            
+            .priorityBadge {
+              padding: 4px 8px;
+              border-radius: 12px;
+              font-size: 12px;
+              font-weight: 600;
+              
+              &.high {
+                background: #fee2e2;
+                color: #dc2626;
+              }
+              
+              &.medium {
+                background: #fef3c7;
+                color: #d97706;
+              }
+              
+              &.low {
+                background: #d1fae5;
+                color: #059669;
+              }
+            }
+            
+            .tagsList {
+              display: flex;
+              flex-wrap: wrap;
+              gap: 4px;
+              
+              .tagBadge {
+                background: #e0e7ff;
+                color: #3730a3;
+                padding: 2px 8px;
+                border-radius: 10px;
+                font-size: 12px;
+              }
+            }
+            
+            .jiraLinked {
+              color: #059669;
+              font-weight: 600;
+            }
+            
+            .jiraMissing {
+              color: #6b7280;
+              font-style: italic;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.sectionTitle {
+  font-size: 20px;
+  color: #374151;
+  margin: 0 0 20px 0;
+}
+
+.statCard {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  
+  h4 {
+    margin: 0 0 16px 0;
+    color: #374151;
+  }
+}
+
+.noData {
+  text-align: center;
+  padding: 40px;
+  color: #6b7280;
+}

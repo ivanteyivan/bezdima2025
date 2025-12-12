@@ -1,0 +1,10 @@
+fastapi>=0.95
+uvicorn[standard]>=0.22
+python-dotenv>=1.0
+# ADK / a2a deps are expected to be provided in environment or installed by platform
+google-genai
+google-adk
+a2a
+a2a-sdk
+requests>=2.28
+phoenix

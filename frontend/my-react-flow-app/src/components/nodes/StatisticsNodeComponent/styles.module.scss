@@ -1,0 +1,153 @@
+.statisticsNode {
+  background: white;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+  border-left: 4px solid #3498db;
+  padding: 16px;
+  min-width: 200px;
+  max-width: 300px;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.2s ease;
+  
+  &:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transform: translateY(-1px);
+  }
+  
+  &.selected {
+    border-color: #3498db;
+    box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+  }
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+  
+  .icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 6px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .title {
+    font-weight: 600;
+    font-size: 14px;
+    color: #333;
+  }
+}
+
+.content {
+  min-height: 40px;
+  margin-bottom: 10px;
+  
+  &.emptyContent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f8f9fa;
+    border-radius: 4px;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .preview {
+    background: #f8f9fa;
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 13px;
+    color: #495057;
+    line-height: 1.4;
+    border: 1px solid #e9ecef;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .placeholder {
+    color: #6c757d;
+    font-size: 12px;
+    font-style: italic;
+  }
+}
+
+.statsSummary {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 10px;
+  padding: 6px 10px;
+  background: #f8f9fa;
+  border-radius: 4px;
+  border: 1px solid #e9ecef;
+  
+  .statItem {
+    font-size: 12px;
+    font-weight: 500;
+    
+    &:first-child {
+      color: #28a745; // зеленый для passed
+    }
+    
+    &:nth-child(2) {
+      color: #dc3545; // красный для failed
+    }
+    
+    &:nth-child(3) {
+      color: #6c757d; // серый для skipped
+    }
+  }
+}
+
+.timestamp {
+  font-size: 11px;
+  color: #6c757d;
+  margin-bottom: 8px;
+  text-align: center;
+  background: #f8f9fa;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.idLabel {
+  font-size: 10px;
+  color: #6c757d;
+  text-align: center;
+  font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+  background: #f8f9fa;
+  padding: 2px 6px;
+  border-radius: 3px;
+  margin-top: 8px;
+}
+
+/* Стили для хендлов (аналогично ManualTestNode) */
+.handle {
+  width: 10px;
+  height: 10px;
+  background: #3498db;
+  border: 2px solid white;
+  opacity: 1;
+  transition: all 0.2s ease;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+  
+  &:hover {
+    transform: scale(1.2);
+  }
+}
+
+.handleLeft {
+  left: -5px;
+}
+
+.handleRight {
+  right: -5px;
+}

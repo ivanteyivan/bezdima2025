@@ -1,0 +1,11 @@
+fastapi
+uvicorn[standard]
+openai
+pydantic
+python-dotenv
+pyyaml
+requests
+httpx
+google-adk
+google-genai
+litellm

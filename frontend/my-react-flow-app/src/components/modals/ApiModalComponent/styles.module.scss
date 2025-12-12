@@ -1,0 +1,254 @@
+.connectedPromptSection {
+  padding: 15px;
+  background-color: #e3f2fd;
+  border-radius: 6px;
+  border-left: 4px solid #2196f3;
+}
+
+.promptTitle {
+  font-weight: bold;
+  color: #0d47a1;
+  margin-bottom: 8px;
+}
+
+.promptText {
+  padding: 10px;
+  background-color: white;
+  border-radius: 4px;
+  border: 1px solid #bbdefb;
+  font-size: 14px;
+  max-height: 100px;
+  overflow-y: auto;
+}
+
+.promptCheckbox {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  label {
+    font-size: 14px;
+    color: #333;
+  }
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  align-items: center;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.formLabel {
+  display: block;
+  font-weight: bold;
+  color: #555;
+  font-size: 16px;
+}
+
+.selectInput {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 16px;
+  background-color: #f9f9f9;
+  box-sizing: border-box;
+}
+
+.urlInput {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #4caf50;
+  border-radius: 6px;
+  font-size: 16px;
+  box-shadow: 0 0 0 2px rgba(76, 175, 80, 0.1);
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+
+  &:focus {
+    box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.2);
+    outline: none;
+  }
+}
+
+.textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+  min-height: 150px;
+  font-family: monospace;
+  resize: vertical;
+  box-sizing: border-box;
+}
+
+.buttonGroup {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+  flex-shrink: 0;
+}
+
+.sendButton {
+  flex: 1;
+  padding: 16px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition: all 0.2s ease;
+
+  &:hover:not(.disabled) {
+    background-color: #45a049;
+  }
+
+  &.disabled {
+    background-color: #81c784;
+    cursor: not-allowed;
+    opacity: 0.7;
+  }
+}
+
+.spinner {
+  width: 20px;
+  height: 20px;
+  border: 3px solid #fff;
+  border-top: 3px solid transparent;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.saveButton {
+  flex: 1;
+  padding: 16px;
+  background-color: #2196f3;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: all 0.2s ease;
+
+  &:hover {
+    background-color: #1976d2;
+  }
+}
+
+.errorSection {
+  padding: 15px;
+  background-color: #ffebee;
+  border: 1px solid #f44336;
+  border-radius: 6px;
+  margin-top: 10px;
+  flex-shrink: 0;
+}
+
+.errorHeader {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.errorIcon {
+  color: #c62828;
+  font-size: 16px;
+}
+
+.errorTitle {
+  color: #c62828;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.errorMessage {
+  color: #c62828;
+  font-size: 16px;
+}
+
+.responseSection {
+  margin-top: 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+}
+
+.responseHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  flex-shrink: 0;
+}
+
+.responseTitle {
+  margin: 0;
+  color: #555;
+  font-size: 18px;
+}
+
+.responseInfo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.statusBadge {
+  font-size: 14px;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+.responseSize {
+  font-size: 13px;
+  color: #666;
+}
+
+.responseContainer {
+  background-color: #f5f5f5;
+  border-radius: 6px;
+  overflow: hidden;
+  border: 1px solid #e0e0e0;
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.responseContent {
+  margin: 0;
+  padding: 20px;
+  font-size: 14px;
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: auto;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  word-break: break-word;
+  font-family: monospace;
+  line-height: 1.5;
+}

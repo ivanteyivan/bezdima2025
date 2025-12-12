@@ -1,0 +1,324 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.label {
+  display: block;
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.rangeContainer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.rangeInput {
+  flex: 1;
+  height: 6px;
+  border-radius: 3px;
+  background: #ddd;
+  outline: none;
+  
+  &::-webkit-slider-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #4caf50;
+    cursor: pointer;
+  }
+  
+  &::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #4caf50;
+    cursor: pointer;
+  }
+}
+
+.rangeValue {
+  font-weight: bold;
+  min-width: 40px;
+  font-size: 14px;
+}
+
+.numberInput {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+  
+  &:focus {
+    outline: none;
+    border-color: #4caf50;
+  }
+}
+
+.textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  min-height: 80px;
+  resize: vertical;
+  font-size: 14px;
+  font-family: inherit;
+  
+  &:focus {
+    outline: none;
+    border-color: #4caf50;
+  }
+}
+
+.addTestCaseContainer {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.testCaseInput {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+  
+  &:focus {
+    outline: none;
+    border-color: #4caf50;
+  }
+}
+
+.addButton {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.2s ease;
+  
+  &:hover {
+    background-color: #388e3c;
+  }
+}
+
+.testCasesList {
+  background-color: #f5f5f5;
+  border-radius: 6px;
+  padding: 10px;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.testCount {
+  margin-left: 8px;
+  color: #666;
+  font-weight: normal;
+  font-size: 13px;
+}
+
+.testCasesPreview {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-height: 260px;
+  overflow-y: auto;
+}
+
+.testCasePreview {
+  background: #fff;
+  border-radius: 6px;
+  padding: 8px;
+  border: 1px solid #eee;
+}
+
+.testCaseIndex {
+  font-weight: bold;
+  font-size: 12px;
+  margin-bottom: 6px;
+}
+
+.testCaseContent {
+  font-size: 13px;
+  white-space: pre-wrap;
+  max-height: 120px;
+  overflow: hidden;
+}
+
+.moreTestsMessage {
+  color: #777;
+  font-size: 13px;
+}
+
+.filePreviewBox {
+  background: #fafafa;
+  border: 1px solid #eee;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+.filePreviewHeader {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.filePreviewContent {
+  font-family: monospace;
+  font-size: 13px;
+  white-space: pre-wrap;
+  max-height: 240px;
+  overflow: auto;
+}
+
+.emptyList {
+  color: #999;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+}
+
+.testCaseItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  background-color: white;
+  border-radius: 4px;
+  margin-bottom: 5px;
+}
+
+.testCaseText {
+  flex: 1;
+  word-break: break-word;
+}
+
+.removeButton {
+  background: none;
+  border: none;
+  color: #f44336;
+  cursor: pointer;
+  padding: 5px;
+  font-size: 16px;
+  line-height: 1;
+  margin-left: 10px;
+  
+  &:hover {
+    color: #d32f2f;
+  }
+}
+
+.buttonGroup {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.optimizeButton {
+  padding: 12px 24px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 14px;
+  transition: all 0.2s ease;
+  
+  &:hover {
+    background-color: #388e3c;
+  }
+}
+
+.saveButton {
+  padding: 12px 24px;
+  background-color: #2196f3;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 14px;
+  transition: all 0.2s ease;
+  
+  &:hover {
+    background-color: #1976d2;
+  }
+}
+
+.improvementsSection {
+  margin-top: 10px;
+}
+
+.improvementsText {
+  background-color: #f5f5f5;
+  padding: 15px;
+  border-radius: 6px;
+  overflow: auto;
+  max-height: 300px;
+  font-size: 12px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  font-family: monospace;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.saveError {
+  color: #f44336;
+  font-weight: bold;
+}
+
+.smallButton {
+  padding: 6px 10px;
+  background-color: #eee;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.resultPanel {
+  margin-top: 12px;
+  padding: 12px;
+  border-radius: 8px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.95), rgba(250,250,250,0.95));
+  border: 1px solid #ececec;
+}
+
+.resultHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.resultTitle { font-weight: bold; color: darkorange; }
+.resultMeta { color: #666; font-size: 12px; }
+.metricsRow { display: flex; gap: 8px; margin-bottom: 8px; }
+.metricCard { flex: 1; padding: 8px; background: white; border-radius: 6px; box-shadow: 0 1px 2px rgba(0,0,0,0.04); text-align: center; }
+.metricLabel { font-size: 12px; color: #888; }
+.metricValue { font-size: 18px; font-weight: bold; color: #2e7d32; }
+.improvementsList { margin-top: 8px; }
+.improvementItem { padding: 6px 0; border-bottom: 1px dashed #eee; font-size: 13px; }
+.noImprovements { color: #999; }
+.rawControls { margin-top: 8px; }
+.rawResultBox { margin-top: 8px; padding: 8px; background: #0f1720; color: #e6e6e6; border-radius: 6px; font-size: 12px; overflow: auto; max-height: 220px; }

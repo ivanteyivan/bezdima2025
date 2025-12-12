@@ -1,0 +1,59 @@
+.endNode {
+  width: 80px;
+  height: 80px;
+  background-color: #F44336;
+  border: 2px solid #C62828;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: all 0.2s ease;
+  position: relative;
+
+  &.selected {
+    border: 3px solid #C62828;
+    box-shadow: 0 0 0 3px rgba(244, 67, 54, 0.3);
+  }
+}
+
+.handle {
+  background: #C62828;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.handleLeft {
+  left: -5px;
+}
+
+.handleRight {
+  right: -5px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+.label {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.id {
+  font-size: 10px;
+  color: rgba(255, 255, 255, 0.8);
+  position: absolute;
+  bottom: 5px;
+  text-align: center;
+  width: 100%;
+}

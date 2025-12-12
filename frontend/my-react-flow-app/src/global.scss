@@ -1,0 +1,184 @@
+// Глобальные стили для скроллбаров
+.custom-scrollbar::-webkit-scrollbar {
+  width: 8px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 4px;
+  transition: background 0.3s ease;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
+
+.tabs-scrollbar::-webkit-scrollbar {
+  height: 6px;
+}
+
+.tabs-scrollbar::-webkit-scrollbar-track {
+  background: #e9ecef;
+  border-radius: 3px;
+}
+
+.tabs-scrollbar::-webkit-scrollbar-thumb {
+  background: #adb5bd;
+  border-radius: 3px;
+  transition: background 0.3s ease;
+}
+
+.tabs-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #6c757d;
+}
+
+.custom-scrollbar,
+.tabs-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #c1c1c1 #f1f1f1;
+}
+
+.node-scrollbar::-webkit-scrollbar {
+  width: 4px;
+}
+
+.node-scrollbar::-webkit-scrollbar-track {
+  background: #f8f9fa;
+  border-radius: 2px;
+}
+
+.node-scrollbar::-webkit-scrollbar-thumb {
+  background: #ced4da;
+  border-radius: 2px;
+}
+
+.node-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #ced4da #f8f9fa;
+}
+
+// Общие стили для кнопок
+button {
+  transition: all 0.2s ease;
+}
+
+// Индикаторы для старта и конца
+.start-end-indicator {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  font-size: 10px;
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.start-indicator {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.end-indicator {
+  background-color: #F44336;
+  color: white;
+}
+
+// Основные стили приложения
+.app-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.app-content {
+  flex: 1;
+  display: flex;
+  overflow: hidden;
+}
+
+// Кнопка переключения сайдбара
+.sidebar-toggle {
+  position: absolute;
+  top: 10px;
+  z-index: 1000;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #fff;
+  border: 1px solid #dee2e6;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  font-weight: bold;
+  color: #495057;
+  transition: left 0.3s ease, background-color 0.2s ease;
+
+  &:hover {
+    background-color: #f8f9fa;
+  }
+}
+
+// Контейнер для React Flow
+.flow-container {
+  flex: 1;
+  background-color: #f8f9fa;
+  position: relative;
+  overflow: hidden;
+}
+
+.react-flow-wrapper {
+  background-color: #f8f9fa;
+  width: 100%;
+  height: 100%;
+}
+
+// Элементы управления React Flow
+.react-flow-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+}
+
+// Кнопка переключения чата
+.chat-toggle-button {
+  position: absolute;
+  bottom: 60px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  z-index: 999;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: #0056b3;
+  }
+}

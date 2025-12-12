@@ -1,0 +1,87 @@
+.fileDownloadNode {
+  padding: 15px;
+  background-color: #e8f5e9;
+  border: 2px solid #2e7d32;
+  border-radius: 8px;
+  min-width: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.08);
+  transition: all 0.2s ease;
+  position: relative;
+
+  &.selected {
+    border: 3px solid #2e7d32;
+    box-shadow: 0 0 0 3px rgba(46, 125, 50, 0.2);
+  }
+}
+
+.handle {
+  background: #2e7d32;
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.handleLeft {
+  left: -4px;
+}
+
+.handleRight {
+  right: -4px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.icon {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: #2e7d32;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.title {
+  font-weight: bold;
+  color: #1b5e20;
+  font-size: 14px;
+}
+
+.content {
+  font-size: 12px;
+  color: #2c3e50;
+  word-break: break-word;
+  padding: 8px;
+  background-color: #dcedc8;
+  border-radius: 4px;
+  line-height: 1.4;
+}
+
+.metaHint {
+  font-size: 11px;
+  color: #1b5e20;
+}
+
+.meta {
+  font-size: 11px;
+  color: #1b5e20;
+}
+
+.idLabel {
+  font-size: 10px;
+  color: #2e7d32;
+  text-align: center;
+}
+

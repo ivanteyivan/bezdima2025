@@ -1,0 +1,248 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.checkTypeSection {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.sectionLabel {
+  display: block;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.radioGroup {
+  display: flex;
+  gap: 20px;
+}
+
+.radioLabel {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.testCaseTextarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  min-height: 150px;
+  resize: vertical;
+  font-family: monospace;
+  font-size: 14px;
+  
+  &:focus {
+    outline: none;
+    border-color: #9c27b0;
+  }
+}
+
+.addTestCaseContainer {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.testCaseInput {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+  
+  &:focus {
+    outline: none;
+    border-color: #9c27b0;
+  }
+}
+
+.addButton {
+  padding: 10px 20px;
+  background-color: #9c27b0;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.2s ease;
+  
+  &:hover {
+    background-color: #7b1fa2;
+  }
+}
+
+.testCasesList {
+  background-color: #f5f5f5;
+  border-radius: 6px;
+  padding: 10px;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.emptyList {
+  color: #999;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+}
+
+.testCaseItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  background-color: white;
+  border-radius: 4px;
+  margin-bottom: 5px;
+}
+
+.testCaseText {
+  font-family: monospace;
+  font-size: 12px;
+  flex: 1;
+  word-break: break-word;
+}
+
+.removeButton {
+  background: none;
+  border: none;
+  color: #f44336;
+  cursor: pointer;
+  padding: 5px;
+  font-size: 16px;
+  line-height: 1;
+  margin-left: 10px;
+  
+  &:hover {
+    color: #d32f2f;
+  }
+}
+
+.buttonGroup {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.checkButton {
+  padding: 12px 24px;
+  background-color: #9c27b0;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 14px;
+  transition: all 0.2s ease;
+  
+  &:hover {
+    background-color: #7b1fa2;
+  }
+}
+
+.saveButton {
+  padding: 12px 24px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 14px;
+  transition: all 0.2s ease;
+  
+  &:hover {
+    background-color: #388e3c;
+  }
+}
+
+.resultSection {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.resultContainer {
+  background-color: #f5f5f5;
+  border-radius: 6px;
+  padding: 20px;
+}
+
+.resultHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+.scoreSection {
+  display: flex;
+  flex-direction: column;
+}
+
+.scoreLabel {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 4px;
+}
+
+.scoreValue {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.indicators {
+  display: flex;
+  gap: 15px;
+}
+
+.indicator {
+  text-align: center;
+}
+
+.indicatorLabel {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 4px;
+}
+
+.indicatorIcon {
+  font-size: 20px;
+}
+
+.recommendations {
+  margin-top: 10px;
+}
+
+.recommendationsTitle {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.recommendationsList {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.recommendationItem {
+  margin-bottom: 5px;
+  font-size: 14px;
+  line-height: 1.4;
+}

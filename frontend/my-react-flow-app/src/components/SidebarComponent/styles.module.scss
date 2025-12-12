@@ -1,0 +1,188 @@
+.sidebarContainer {
+  width: 300px;
+  background: #f8f9fa;
+  padding: 20px;
+  border-right: 1px solid #dee2e6;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  overflow-y: auto;
+  flex-shrink: 0;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.title {
+  margin: 0 0 10px 0;
+  color: #495057;
+  font-size: 18px;
+}
+
+.section {
+  border-bottom: 1px solid #dee2e6;
+  padding-bottom: 15px;
+}
+
+.sectionTitle {
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #495057;
+  font-size: 14px;
+}
+
+.stats {
+  font-size: 14px;
+  color: #6c757d;
+  margin-bottom: 10px;
+}
+
+.selectedStats {
+  font-size: 12px;
+  color: #868e96;
+}
+
+.clipboardInfo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 5px;
+  flex-wrap: wrap;
+}
+
+.clipboardText {
+  font-size: 12px;
+  color: #868e96;
+}
+
+.indicators {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-left: auto;
+}
+
+.buttonsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+}
+
+.addButton {
+  padding: 12px;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: bold;
+  transition: all 0.2s ease;
+  width: 100%;
+}
+
+.buttonContent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.checkmark {
+  font-size: 10px;
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 2px 6px;
+  border-radius: 10px;
+}
+
+.fullWidthButton {
+  width: 100%;
+}
+
+.actionButton {
+  padding: 12px;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: bold;
+  transition: all 0.2s ease;
+  width: 100%;
+}
+
+.buttonDescription {
+  font-size: 11px;
+  color: #6c757d;
+  margin-top: 5px;
+  text-align: center;
+}
+
+.progressBarOuter {
+  position: relative;
+  width: 100%;
+  height: 10px;
+  background: #e9ecef;
+  border-radius: 6px;
+  margin-top: 8px;
+  overflow: hidden;
+}
+
+.progressBarInner {
+  height: 100%;
+  background: linear-gradient(90deg, #4caf50, #2196f3);
+  transition: width 0.2s ease;
+}
+
+.progressLabel {
+  display: block;
+  text-align: center;
+  font-size: 11px;
+  color: #495057;
+  margin-top: 4px;
+}
+
+.buttonGroup {
+  display: flex;
+  gap: 8px;
+  width: 100%;
+}
+
+.smallButton {
+  flex: 1;
+  padding: 10px;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: all 0.2s ease;
+}
+
+.resetButton {
+  padding: 10px;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: bold;
+  width: 100%;
+  transition: all 0.2s ease;
+}
+
+.statsPanel {
+  padding: 12px;
+  background-color: #e9ecef;
+  border-radius: 6px;
+  font-size: 12px;
+}
+
+.statRow {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4px;
+  
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.statValue {
+  font-weight: bold;
+}

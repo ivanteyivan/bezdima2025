@@ -1,0 +1,3 @@
+.venv
+generated_*.py
+openapi-v3.yaml

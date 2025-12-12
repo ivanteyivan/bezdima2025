@@ -1,0 +1,205 @@
+// Основные стили для контейнера вкладок
+.tabsBar {
+  height: 50px;
+  background-color: #e9ecef;
+  border-top: 1px solid #dee2e6;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  overflow-x: auto;
+  flex-shrink: 0;
+  position: relative;
+  z-index: 100;
+}
+
+// Стили для скроллбара (если нужна кастомизация)
+.tabsScrollbar {
+  &::-webkit-scrollbar {
+    height: 4px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: #adb5bd;
+    border-radius: 2px;
+  }
+}
+
+// Стили для отдельной вкладки
+.tab {
+  padding: 8px 12px 8px 16px;
+  margin-right: 5px;
+  background-color: #ced4da;
+  border: 1px solid #adb5bd;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  white-space: nowrap;
+  min-width: 120px;
+  justify-content: space-between;
+  position: relative;
+  transition: all 0.2s ease;
+
+  &.tabActive {
+    background-color: #fff;
+    border: 2px solid #4dabf7;
+  }
+
+  &.tabDisabled {
+    cursor: not-allowed !important;
+    opacity: 0.7;
+  }
+
+  &:not(.tabDisabled):hover {
+    background-color: #e9ecef;
+  }
+
+  &.tabActive:not(.tabDisabled):hover {
+    background-color: #f8f9fa;
+  }
+}
+
+// Метка вкладки
+.tabLabel {
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-weight: normal;
+  color: #6c757d;
+
+  &.tabLabelActive {
+    font-weight: bold !important;
+    color: #495057 !important;
+  }
+}
+
+.tabLabelText {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+// Индикаторы START/END
+.tabIndicators {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.tabIndicator {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: inline-block;
+
+  &Start {
+    background-color: #4CAF50;
+  }
+
+  &End {
+    background-color: #F44336;
+  }
+}
+
+// Правая часть вкладки (счетчик и кнопка удаления)
+.tabRightSection {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+// Счетчик узлов
+.tabCounter {
+  font-size: 11px;
+  background-color: #dee2e6;
+  padding: 2px 6px;
+  border-radius: 10px;
+  color: #6c757d;
+  min-width: 20px;
+  text-align: center;
+
+  &.tabCounterActive {
+    background-color: #e7f5ff !important;
+    color: #1971c2 !important;
+  }
+}
+
+// Кнопка удаления вкладки
+.tabDeleteBtn {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 0;
+  margin-left: 4px;
+  color: #6c757d;
+  transition: all 0.2s ease;
+  font-size: 12px;
+
+  &:hover {
+    background-color: #ff6b6b;
+    color: white;
+  }
+
+  &.tabDeleteBtnDisabled {
+    cursor: not-allowed !important;
+    color: #aaa !important;
+
+    &:hover {
+      background-color: transparent !important;
+      color: #aaa !important;
+    }
+  }
+}
+
+// Кнопка добавления новой вкладки
+.addTabBtn {
+  padding: 8px 12px;
+  margin-left: 5px;
+  background-color: #4dabf7;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  min-width: 40px;
+  transition: all 0.2s ease;
+
+  &:hover {
+    background-color: #339af0;
+  }
+
+  &.addTabBtnDisabled {
+    background-color: #adb5bd !important;
+    cursor: not-allowed !important;
+    opacity: 0.5;
+
+    &:hover {
+      background-color: #adb5bd !important;
+    }
+  }
+}
+
+// Счетчик вкладок справа
+.tabsCounter {
+  margin-left: auto;
+  font-size: 12px;
+  color: #6c757d;
+  padding: 0 10px;
+  white-space: nowrap;
+}
